@@ -1,0 +1,8 @@
+target/
+*.class
+/lib/
+.idea/
+.vscode/
+data/*.db
+!data/.gitkeep
+Thumbs.db
