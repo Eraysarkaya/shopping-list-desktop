@@ -1,42 +1,30 @@
 # Shopping List Desktop
 
-A Java Swing learning project for managing personal shopping lists and products with a local SQLite database.
+Alışveriş listelerini masaüstünde yönetmek için geliştirilmiş Java Swing uygulaması. Listeler ve ürünler yerel SQLite veritabanında saklanır.
 
-## Features
+## Özellikler
 
-- Registration and login
-- Multiple shopping lists per user
-- Product name, brand, URL, quantity, unit, and price
-- Completed-item tracking and list totals
-- Local SQLite database initialized on first run
-- PBKDF2 password hashing with automatic upgrade of legacy test accounts
+- Kayıt ve giriş
+- Kullanıcı başına birden fazla liste
+- Ürün adı, marka, bağlantı, miktar, birim ve fiyat bilgileri
+- Tamamlanan ürünleri işaretleme ve liste toplamı
+- Veritabanını ilk çalıştırmada oluşturma
 
-## Requirements
+**Teknolojiler:** Java Swing, Maven, SQLite. Yeni hesapların parolaları PBKDF2-HMAC-SHA256 ile işlenir.
 
-- JDK 17 or newer
-- Maven 3.9 or newer
+## Çalıştırma
 
-## Run
+JDK 17+ ve Maven 3.9+ gerekir.
 
 ```bash
 mvn clean package
 java -jar target/shopping-list-desktop-1.0.0.jar
 ```
 
-The application creates `data/database.db` locally. Runtime databases are excluded from Git.
+Veritabanı `data/database.db` yolunda yerel olarak oluşur ve Git'e eklenmez. Testler: `mvn test`.
 
-## Test
+Bu bir öğrenme projesidir. Eski yerel test hesaplarındaki düz metin parolalar, başarılı giriş sonrasında yeni parola biçimine geçirilir.
 
-```bash
-mvn test
-```
+## Lisans
 
-The initial automated test verifies that passwords are salted, hashed, and compared safely.
-
-## Security note
-
-The original coursework version stored test passwords as plaintext. New registrations use PBKDF2-HMAC-SHA256, and an old local test account is upgraded after its next successful login.
-
-## License
-
-MIT
+MIT.
