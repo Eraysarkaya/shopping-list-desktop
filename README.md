@@ -1,6 +1,8 @@
 # Shopping List Desktop
 
-Birden fazla alışveriş listesi hazırlayıp ürünlerin miktarını, fiyatını ve alınıp alınmadığını takip etmeye yarayan masaüstü uygulaması. Java Swing ile geliştirilmiştir; listeler ve hesaplar bilgisayardaki SQLite veritabanında saklanır.
+Birden fazla alışveriş listesini ve ürün harcamalarını bilgisayarda takip etmeye yarayan masaüstü uygulaması.
+
+Alışveriş listelerini masaüstünde yönetmek için geliştirilmiş Java Swing uygulaması. Listeler ve ürünler yerel SQLite veritabanında saklanır.
 
 ## Özellikler
 
