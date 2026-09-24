@@ -1,6 +1,6 @@
 # Shopping List Desktop
 
-A Java Swing desktop application for managing personal shopping lists and products with local SQLite persistence.
+A Java Swing learning project for managing personal shopping lists and products with a local SQLite database.
 
 ## Features
 
